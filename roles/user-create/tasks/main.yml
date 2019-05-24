@@ -1,11 +1,13 @@
 --- 
-name: "creating the users"
-user: 
-  comment: "{{ sful }}"
-  group: weel
-  groups: wheel
-  home: "/home/{{ sname }}"
-  name: "{{ sname }}"
-  password: "{{ 'Abc123' | password_hash('sha512') }}"
-  shell: /bin/bash
+- 
+  name: "creating the users"
+  user: 
+    comment: "{{ sful }}"
+    group: weel
+    groups: wheel
+    home: "/home/{{ sname }}"
+    name: "{{ sname }}"
+    password: "{{ 'Abc123' | password_hash('sha512') }}"
+    shell: /bin/bash
+
 
